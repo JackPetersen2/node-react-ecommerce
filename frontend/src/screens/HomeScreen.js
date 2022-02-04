@@ -34,7 +34,7 @@ function HomeScreen(props) {
       {category && <h2>{category}</h2>}
 
       <ul className="filter">
-        <li>
+        <li className="filter_li">
           <form onSubmit={submitHandler}>
             <input
               name="searchKeyword"
@@ -43,7 +43,7 @@ function HomeScreen(props) {
             <button type="submit">Search</button>
           </form>
         </li>
-        <li>
+        <li className="filter_li">
           Sort By{' '}
           <select name="sortOrder" onChange={sortHandler}>
             <option value="">Newest</option>
